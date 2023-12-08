@@ -1,0 +1,240 @@
+<!-- 头部 -->
+<view class="header">
+	<!-- 位置 -->
+	<navigator url="./index" hover-class="none" class="location">北京</navigator>
+	<!-- 切换 -->
+	<view class="tabs">
+		<text catchtap='handleTap' data-active='hot' class="{{active=='hot'?'current':''}}">热映</text>
+	</view>
+	<!-- 搜索 -->
+	<navigator url="./index" hover-class="none" class="search"></navigator>
+</view>
+
+<!-- 电影列表 热映 -->
+<view class="items hots" hidden="{{active == 'coming'}}">
+	<navigator wx:for="{{list.hot}}" wx:key="id" url="./detail">
+		<view class="item">
+			<!-- 播放按钮 -->
+			<text class="play"></text>
+			<image src="{{item.img}}"></image>
+			<!-- 信息 -->
+			<view class="meta">
+				<text class="name">{{item.nm}}</text>
+				<text class="type">{{item.cat}}</text>
+				<text class="actor">{{item.desc}}</text>
+				<text class="count">{{item.showInfo}}</text>
+			</view>
+			<!-- 状态 -->
+			<view class="status">
+				<view class="extra">
+					{{item.sc}}<text>分</text>
+				</view>
+				<text class="btn">购票</text>
+			</view>
+		</view>
+	</navigator>
+
+	<!-- 列表 -->
+	<view class="items plan">
+		<text class="title">过年系列</text>
+		<navigator url="./gn4/new">
+			<view class="item">
+				<!-- 播放按钮 -->
+				<image src="cloud://yiwen-6gdeswyr79f263f9.7969-yiwen-6gdeswyr79f263f9-1318759020/海报/过年4海报.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">过年4</text>
+					<text class="type">动作,冒险,亲情</text>
+					<text class="actor">主演: 刘敏怡,黄欣,黄炜烽</text>
+					<text class="count">2024-02-09 大年三十</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<text class="btn presell">预约</text>
+        </view>
+			</view>
+		</navigator>
+    <navigator url="./gn3/new">
+			<view class="item">
+				<!-- 播放按钮 -->
+				<image src="cloud://yiwen-6gdeswyr79f263f9.7969-yiwen-6gdeswyr79f263f9-1318759020/海报/过年3海报.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">过年3</text>
+					<text class="type">剧情，亲情</text>
+					<text class="actor">主演: 黄炜烽</text>
+          <text class="count">2023-02-05</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<view class="extra">
+					</view>
+					<text class="btn">观看</text>
+				</view>
+			</view>
+		</navigator>
+		<navigator url="./gn2/new">
+			<view class="item">
+				<!-- 播放按钮 -->
+				<image src="cloud://yiwen-6gdeswyr79f263f9.7969-yiwen-6gdeswyr79f263f9-1318759020/海报/过年2海报.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">过年2</text>
+					<text class="type">悬疑,剧情</text>
+					<text class="actor">主演: 黄亿文</text>
+					<text class="count">2023-01-26</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<view class="extra">
+					</view>
+					<text class="btn">观看</text>
+				</view>
+			</view>
+		</navigator>
+		<navigator url="./gn/new">
+			<view class="item">
+				<!-- 播放按钮 -->
+				<image src="cloud://yiwen-6gdeswyr79f263f9.7969-yiwen-6gdeswyr79f263f9-1318759020/img/过年1海报.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">过年</text>
+					<text class="type">纪录片，亲情</text>
+					<text class="actor">主演: 钟俊锋，黄欣</text>
+					<text class="count">2023-01-21 大年三十</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<view class="extra">
+					</view>
+					<text class="btn">观看</text>
+				</view>
+			</view>
+		</navigator>
+    <text class="title">惊变系列</text>
+		<navigator url="./jingbian/new">
+			<view class="item">
+				<!-- 播放按钮 -->
+				<image src="cloud://yiwen-6gdeswyr79f263f9.7969-yiwen-6gdeswyr79f263f9-1318759020/海报/惊变概念海报.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">惊变</text>
+					<text class="type">恐怖,冒险,动作</text>
+					<text class="actor">主演: 黄亿文</text>
+					<text class="count">2025 敬请期待</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<text class="btn presell">预约</text>
+				</view>
+			</view>
+		</navigator>
+    <text class="title">其他作品</text>
+    <navigator url="./hyqs/new">
+			<view class="item">
+				<!-- 播放按钮 -->
+				<image src="https://bkimg.cdn.bcebos.com/pic/f7426d8d690e0b59b21bba62?x-bce-process=image/format,f_auto"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">荒野求生</text>
+					<text class="type">纪录片,冒险</text>
+					<text class="actor">主演: 黄亿文,黄炜烽</text>
+					<text class="count">2023年1月16日开播</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<text class="btn">观看</text>
+				</view>
+			</view>
+		</navigator>
+    <navigator url="./beiyiwangderen/new">
+			<view class="item">
+				<!-- 播放按钮 -->
+				<image src="cloud://yiwen-6gdeswyr79f263f9.7969-yiwen-6gdeswyr79f263f9-1318759020/海报/被遗忘的人.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">被遗忘的人</text>
+					<text class="type">悲伤,剧情</text>
+					<text class="actor">主演: 黄亿文</text>
+          <text class="count">2022-12-13</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<text class="btn">观看</text>
+				</view>
+			</view>
+		</navigator>
+		<navigator url="./yaoqinjinpy/new">
+			<view class="item">
+				<!-- 播放按钮 -->
+				<image src="cloud://yiwen-6gdeswyr79f263f9.7969-yiwen-6gdeswyr79f263f9-1318759020/海报/要亲近朋友海报.jpg"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">要亲近朋友</text>
+					<text class="type">剧情,友情</text>
+					<text class="actor">主演: 黄亿文,黄欣,刘敏怡,钟俊锋,黄炜烽</text>
+					<text class="count">2022-12-10</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<text class="btn">观看</text>
+				</view>
+			</view>
+		</navigator>
+		<text class="title">音乐</text>
+		<navigator url="./ghsy/new">
+			<view class="item">
+				<!-- 播放按钮 -->
+				<image src="http://tothesky.cn/wp-content/uploads/2010/10/16_21689_8b1ab7bac91875b1.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">光辉岁月</text>
+					<text class="type">作词:黄家驹,何启弘,周治平</text>
+					<text class="actor">演唱:黄家驹</text>
+					<text class="count">2022-07-22</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<text class="btn">观看</text>
+				</view>
+			</view>
+		</navigator>
+		<navigator url="./daoxiang/new">
+			<view class="item">
+				<!-- 播放按钮 -->
+				<image src="cloud://yiwen-6gdeswyr79f263f9.7969-yiwen-6gdeswyr79f263f9-1318759020/海报/稻香.jpg"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">稻香</text>
+					<text class="type">作曲:周杰伦</text>
+					<text class="actor">演唱: 周杰伦</text>
+					<text class="count">2022-07-18</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<text class="btn">观看</text>
+				</view>
+			</view>
+		</navigator>
+		<navigator url="./zwddzp/new">
+			<view class="item">
+				<!-- 播放按钮 -->
+				<image src="https://ngbjimg.xy599.com/147533752462d2104593fb52.17792234.png"></image>
+				<!-- 信息 -->
+				<view class="meta">
+					<text class="name">最伟大的作品</text>
+					<text class="type">作曲:周杰伦</text>
+					<text class="actor">演唱: 周杰伦</text>
+					<text class="count">2022-07-14</text>
+				</view>
+				<!-- 状态 -->
+				<view class="status">
+					<text class="btn">观看</text>
+        </view>
+			</view>
+		</navigator>
+  </view>
+</view>
+
+    <!-- 加载更多... -->
+<text class="loading">加载更多...</text>
