@@ -272,3 +272,377 @@
 </body>
  
 </html>
+
+body {
+    background-color: #f5f5f5;
+ 
+    a {
+        text-decoration: none;
+    }
+ 
+    // 第一部分：头部导航
+    header {
+        background-color: #d33f36;
+        padding: 0.4rem 0.28rem 0.23rem;
+        font-size: 0.43rem;
+        color: white;
+ 
+        section {
+            display: flex;
+            padding: 0 0.1rem 0;
+            margin-bottom: 0.1rem;
+            justify-content: space-between;
+            align-items: center;
+ 
+            div {
+                display: flex;
+ 
+                div {
+                    padding: 0.24rem 0.1rem;
+ 
+                    p {
+                        margin: 0;
+                        padding-bottom: 0.07rem;
+                        margin-right: 0.16rem;
+                    }
+ 
+                    a {
+                        color: white;
+                        font-family: "黑体";
+                        // 让字体旋转
+                        -webkit-transform: rotate(90deg);
+                        margin-right: 0;
+                    }
+                }
+            }
+ 
+            .kuai {
+                width: 5.76rem;
+                // height: 0.96rem;
+                background-color: #b42019;
+                border-radius: 0.3rem;
+ 
+                .dai {
+                    margin: auto;
+                    background-color: white;
+                    border-radius: 0.3rem;
+                    color: #b42019;
+                }
+ 
+                a {
+                    color: white;
+                    margin: 0 0.51rem;
+ 
+                    div {
+                        margin: auto;
+                    }
+                }
+ 
+ 
+            }
+ 
+            a {
+                img {
+                    height: 0.6rem;
+                    width: 0.6rem;
+                }
+            }
+ 
+        }
+ 
+    }
+ 
+    // 第二部分：banner
+    nav {
+        font-size: 0;
+ 
+        img {
+            height: 2.26rem;
+        }
+    }
+ 
+    // 第三部分：购票
+    article {
+        margin-bottom: 2rem;
+        section {
+            display: flex;
+            background-color: white;
+            padding: 0.37rem 0.3rem 0.1rem;
+ 
+            div {
+                margin-right: 0.35rem;
+ 
+                img {
+                    height: 3rem;
+                    width: 2.2rem;
+                }
+ 
+                a {
+                    position: relative;
+                    left: 0.75rem;
+                    top: 0.4rem;
+ 
+                    div {
+                        position: absolute;
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        border-radius: 50%;
+                        box-sizing: border-box;
+                        border: 0.03rem solid white;
+                        background-color: rgba($color: #000000, $alpha: 0.15);
+                        bottom: 1.8rem;
+                        font-size: 0.55rem;
+                        text-align: center;
+                        vertical-align: middle;
+                        color: white;
+                    }
+                }
+            }
+ 
+            .zi {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                flex-grow: 1;
+                border-bottom: 1px solid #e4e4e4;
+ 
+                .wenzi {
+                    width: 4rem;
+ 
+                    div {
+                        display: flex;
+                        align-items: center;
+ 
+                        p {
+                            font-size: 0.5rem;
+                            margin: 0;
+                            margin-top: 0.3rem;
+                            margin-bottom: 0.2rem;
+ 
+                        }
+ 
+                        img {
+                            width: 1.38rem;
+                            height: 0.5rem;
+                        }
+ 
+                    }
+ 
+                    p {
+                        &:nth-child(2) {
+                            font-size: 0.35rem;
+                            margin: 0;
+                            margin-bottom: 0.2rem;
+                            color: #999999;
+ 
+                            span {
+                                font-size: 0.4rem;
+                                color: #feb600;
+                            }
+                        }
+ 
+                        &:nth-child(n+3) {
+                            color: #646464;
+                            font-size: 0.33rem;
+                            margin: 0;
+                        }
+                    }
+ 
+ 
+                }
+ 
+                a {
+                    width: 1.44rem;
+                    height: 0.8rem;
+                    border: 0.02rem solid #109de8;
+                    box-sizing: border-box;
+                    border-radius: 0.15rem;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0.6rem 0.8rem;
+ 
+                    p {
+                        font-size: 0.35rem;
+                        margin: 0;
+                        color: #109de8;
+                    }
+                }
+            }
+        }
+ 
+        aside {
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            height: 1.17rem;
+            align-items: center;
+            border-bottom: 1px solid #e4e4e4;
+ 
+            div {
+                font-size: 0.32rem;
+                border: 0.01rem solid #ff9900;
+                color: #ff9900;
+                border-radius: 0.1rem;
+                margin-right: 0.27rem;
+                padding: 0.1rem 0.14rem;
+            }
+ 
+            p {
+                font-size: 0.35rem;
+                margin: 0;
+ 
+            }
+        }
+        .xiaozi {
+            display: flex;
+            background-color: white;
+            padding: 0.37rem 0.3rem 0.1rem;
+            border-bottom: 1px solid #e4e4e4;
+            div {
+                margin-right: 0.35rem;
+ 
+                img {
+                    height: 3rem;
+                    width: 2.2rem;
+                }
+ 
+                a {
+                    position: relative;
+                    left: 0.75rem;
+                    top: 0.4rem;
+ 
+                    div {
+                        position: absolute;
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        border-radius: 50%;
+                        box-sizing: border-box;
+                        border: 0.03rem solid white;
+                        background-color: rgba($color: #000000, $alpha: 0.15);
+                        bottom: 1.8rem;
+                        font-size: 0.55rem;
+                        text-align: center;
+                        vertical-align: middle;
+                        color: white;
+                    }
+                }
+            }
+ 
+            .zi {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                flex-grow: 1;
+ 
+                .wenzi {
+                    width: 4rem;
+ 
+                    div {
+                        display: flex;
+                        align-items: center;
+ 
+                        p {
+                            font-size: 0.5rem;
+                            margin: 0;
+                            margin-top: 0.3rem;
+                            margin-bottom: 0.2rem;
+ 
+                        }
+ 
+                        img {
+                            width: 1.38rem;
+                            height: 0.5rem;
+                        }
+ 
+                    }
+ 
+                    p {
+                        &:nth-child(2) {
+                            font-size: 0.35rem;
+                            margin: 0;
+                            margin-bottom: 0.2rem;
+                            color: #999999;
+ 
+                            span {
+                                font-size: 0.4rem;
+                                color: #feb600;
+                            }
+                        }
+ 
+                        &:nth-child(n+3) {
+                            color: #646464;
+                            font-size: 0.33rem;
+                            margin: 0;
+                        }
+                    }
+ 
+ 
+                }
+ 
+                a {
+                    width: 1.44rem;
+                    height: 0.8rem;
+                    border: 0.02rem solid #109de8;
+                    box-sizing: border-box;
+                    border-radius: 0.15rem;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0.6rem 0.8rem;
+ 
+                    p {
+                        font-size: 0.35rem;
+                        margin: 0;
+                        color: #109de8;
+                    }
+                }
+            }
+        }
+    }
+    // 第四部分：尾部导航
+    footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #d5d5d5;
+        background-color: #f5f5f5;
+        padding: 0.22rem 1.1rem;
+        position: fixed;
+        bottom: 0;
+        width: 79.5%;
+        overflow: hidden;
+ 
+        a {
+            font-size: 0;
+ 
+            i {
+                width: 0.74rem;
+                height: 1.2rem;
+                background-position: 0 -2.72rem;
+                display: inline-block;
+                background-image: url("../img/daiying/icon100.png");
+                background-size: 5.6rem 5.1rem;
+            }
+ 
+            &:nth-child(2) {
+                i {
+                    background-position: -0.95rem -1.55rem;
+                }
+            }
+ 
+            &:nth-child(3) {
+                i {
+                    background-position: -2.07rem -1.55rem;
+                }
+            }
+ 
+            &:nth-child(4) {
+                i {
+                    background-position: -3.04rem -2.75rem;
+                }
+            }
+        }
+    }
+}
