@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333333;
+}
+a:active,
+a:focus {
+	text-decoration: none; /* 去除下划线 */
+	outline: none; /* 去除焦点时的虚线边框 */
+	color: #333333;
+}
+body{
+	background-color: #f6f6f6;
+}
+.txt{
+	padding-top: 10px;
+}
+.txt p{
+	font-size: 19px;
+}
+.txt span{
+	color: #ccc;
+	padding-right: 20px;
+}
+.foot{
+	padding-top: 20px;
+}
+.dz img{
+	width: 15px;
+	height: 15px;
+	margin-right: 2px;
+	float: left;
+	margin-top: 2px;
+}
+.jb img{
+	width: 15px;
+	height: 15px;
+	margin-right: 2px;
+	float: left;
+	margin-top: 2px;
+}
+.foot span{
+	font-size: 12px;
+}
