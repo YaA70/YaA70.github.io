@@ -84,20 +84,30 @@ body{
 .hd{
 	padding: 5px 0;
 }
+.tabs ul {
+	overflow: auto;
+	white-space: nowrap;
+}
 .two{
+	overflow: auto;
+	white-space: nowrap;
 	padding-bottom:10px;
 }
 .two img{
+	overflow: auto;
+	white-space: nowrap;
 	width:75px;
 	height: 110px;
 }
 #t1 img{
+	overflow: auto;
+	white-space: nowrap;
 	width:75px;
 	height: 110px;
 }
 .ct p{
 	font-size: 12px;
-	width: 70px;
+	width: 755px;
 	margin: 5px 0 0 0 ;
 }
 .ct span{
@@ -123,6 +133,9 @@ body{
 	white-space: nowrap;       /* 防止文本换行 */
 	overflow: hidden;          /* 隐藏溢出部分 */
 	text-overflow: ellipsis;   /* 显示省略号 */
+}
+ul:active{ 
+	background-color:#b5b5b5
 }
 #tt1{
 	padding-top: 10px;
